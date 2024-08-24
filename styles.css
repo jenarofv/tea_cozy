@@ -16,7 +16,8 @@ body {
   left: 0;
   position: fixed;
   right: 0;
-  top: 0;
+  /* this is the defult value, but needs to be set when position is fixed */
+  top: 8;
   z-index: 1;
   opacity: 0.8;
 }
@@ -43,6 +44,12 @@ nav ul li {
   display: inline;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #mission {
   display: flex;
   margin-left: auto;
@@ -52,6 +59,7 @@ nav ul li {
   background-image: url("./img-mission-background.jpg");
   height: 700px;
   width: 1200px;
+  max-width: 100%;
   align-items: center;
 }
 
@@ -72,7 +80,7 @@ h2, h4 {
   margin-right: auto;
   width: 1000px;
   align-items: center;
-
+  max-width: 100%;
 }
 
 #teaofmonth div {
@@ -83,6 +91,7 @@ h2, h4 {
 }
 
 #teaofmonth div ul {
+  padding-left: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -107,17 +116,15 @@ h2, h4 {
   text-align: center;
   align-content: center;
   background-image: url("./img-locations-background.jpg");
-  height: 550px;
+  min-height: 550px;
   width: 1200px;
+  max-width: 100%;
+  padding-top: 1rem;
 }
 
 #locations h2 {
   margin: 0 auto;
-  padding: 0;
-}
-
-#locations div {
-  display: ineline-flex;
+  width: min-content;
 }
 
 .loc {
@@ -132,7 +139,6 @@ h2, h4 {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-
 }
 
 .loc h3 {
