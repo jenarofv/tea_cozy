@@ -1,0 +1,151 @@
+body {
+  background-color: black;
+  color: seashell;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  opacity: 0.9;
+}
+
+.header {
+  align-items: center;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  display: flex; 
+  height: 69px;
+  justify-content: space-between;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+#logo {
+  padding-left: 10px;
+  height: 50px;
+}
+
+.navlink {
+  color: seashell; 
+}
+
+nav {
+  padding-right: 10px;
+}
+
+nav ul {
+  text-align: right;
+}
+
+nav ul li {
+  text-decoration: underline;
+  display: inline;
+}
+
+#mission {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 69px;
+  background-image: url("./img-mission-background.jpg");
+  height: 700px;
+  width: 1200px;
+  align-items: center;
+}
+
+#mission div {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  line-height: 0.8;
+}
+
+h2, h4 {
+  font-weight: 1000;
+}
+
+
+#teaofmonth {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  align-items: center;
+
+}
+
+#teaofmonth div {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  line-height: 0.8;
+}
+
+#teaofmonth div ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#teaofmonth div ul li{
+  display: inline;
+}
+
+#teaofmonth div ul li img {
+  width: 300px;
+  height: 200px;
+}
+
+.caption {
+  font-weight: bold;
+}
+
+#locations {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-content: center;
+  background-image: url("./img-locations-background.jpg");
+  height: 550px;
+  width: 1200px;
+}
+
+#locations h2 {
+  margin: 0 auto;
+  padding: 0;
+}
+
+#locations div {
+  display: ineline-flex;
+}
+
+.loc {
+  display: inline-block;
+  width: 300px;
+  opacity: 1;
+  background: black;
+  margin-top: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+  line-height: 2.8; 
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.loc h3 {
+  margin: 0 auto;
+}
+
+#contact {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+
+#copyright {
+  padding-left: 20px;
+  text-align: left;
+}
